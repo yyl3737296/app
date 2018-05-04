@@ -7,20 +7,16 @@
   <div class="card">
     <div class="card-body login-card-body">
 
-      <form action="/app" method="post">
         <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
-          <span class="fa fa-envelope form-control-feedback"></span>
+          <input v-model="username" name="username" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Password">
-          <span class="fa fa-lock form-control-feedback"></span>
+          <input v-model="password" name="password" type="password" class="form-control" placeholder="Password">
         </div>
         <div class="row">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            <button @click="login()" type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
           <!-- /.col -->
         </div>
-      </form>
 
       <!-- /.social-auth-links -->
 
@@ -50,6 +46,8 @@
     },
     data(){
       return {
+        username:'',
+        password:''
       }
     },
     computed: {
@@ -58,7 +56,32 @@
       }
     },
     methods: {
-      fetch(){
+      getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1);
+              if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+          }
+          return "";
+      },
+      login() {
+        var _cookie = this.getCookie('csrfToken');
+        this.$http.create({
+          headers: {'X-Custom-Header-123123123123123': 'foobar'}
+        })
+        let data = {
+          'x-csrf-token': _cookie,
+          'username': this.username,
+          'password': this.password
+        };
+        this.$http.post('/login', data).then(res=> {
+          console.log('res', res);
+          
+        }).then(err=> {
+
+        });
       },
       loadPage(){
       }

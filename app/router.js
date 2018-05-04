@@ -1,5 +1,6 @@
 
 module.exports = app => {
+  app.post('/login', app.controller.login.login.index)
   app.get('/', app.controller.home.home.index);
   app.get('/client', app.controller.home.home.client);
   app.get('/element', app.controller.element.element.element);
