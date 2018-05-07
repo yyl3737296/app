@@ -1,56 +1,4 @@
 {
-  "security": {
-    "csrf": {
-      "queryName": "E:\\app\\config\\config.default.js",
-      "bodyName": "E:\\app\\config\\config.default.js",
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "domainWhiteList": "E:\\app\\config\\config.local.js",
-    "protocolWhiteList": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-    "xframe": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "hsts": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "dta": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "methodnoallow": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "noopen": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "nosniff": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "referrerPolicy": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "xssProtection": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "csp": {
-      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    },
-    "ssrf": {
-      "ipBlackList": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
-    }
-  },
   "siteFile": {
     "/favicon.ico": "E:\\app\\config\\config.default.js"
   },
@@ -132,6 +80,58 @@
       "match": "E:\\app\\node_modules\\egg-webpack\\config\\config.default.js"
     },
     "webpackConfigList": "E:\\app\\node_modules\\egg-webpack\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "E:\\app\\config\\config.local.js",
+    "protocolWhiteList": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\app\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\app\\node_modules\\egg-security\\config\\config.default.js"
+    }
   },
   "session": {
     "maxAge": "E:\\app\\node_modules\\egg-session\\config\\config.default.js",

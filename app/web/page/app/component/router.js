@@ -24,7 +24,9 @@ const router = new VueRouter({
     }
   ]
 });
-/** router.beforeEach((to, from, next) => {
-  location.href = '/';
-});*/
+router.beforeEach((to, from, next) => {
+  if (!sessionStorage.getItem('key')) {
+    location.href = '/';
+  }
+});
 export default router;

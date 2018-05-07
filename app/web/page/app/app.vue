@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+  <div id="wrapper" class="wrapper" style="visibility:hidden;">
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
@@ -150,11 +150,18 @@ export default {
   store,
   computed: {
     logOut() {
+      sessionStorage.removeItem('key');
       location.href = '/';
     }
   },
   mounted() {
-    
+    if (sessionStorage.getItem('key')) {
+      $('#wrapper').css('visibility', 'visible');
+    }
+    history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+      history.pushState(null, null, document.URL);
+    });
   }
 };
 </script>

@@ -11,21 +11,12 @@
           <input v-model="username" name="username" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="form-group has-feedback">
-          <input v-model="password" name="password" type="password" class="form-control" placeholder="Password">
+          <input @keyup="enterLogin($event)" v-model="password" name="password" type="password" class="form-control" placeholder="Password">
         </div>
         <div class="row">
             <button @click="login()" type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
           <!-- /.col -->
         </div>
-
-      <!-- /.social-auth-links -->
-
-     <!--  <p class="mb-1">
-       <a href="#">I forgot my password</a>
-     </p>
-     <p class="mb-0">
-       <a href="register.html" class="text-center">Register a new membership</a>
-     </p> -->
     </div>
   </div>
 </div>
@@ -56,6 +47,9 @@
       }
     },
     methods: {
+      enterLogin(ev) {
+        ev.keyCode === 13 && this.login();
+      },
       getCookie(cname) {
           var name = cname + "=";
           var ca = document.cookie.split(';');
@@ -67,7 +61,24 @@
           return "";
       },
       login() {
-        var _cookie = this.getCookie('csrfToken');
+        var csrftoken = this.getCookie('csrfToken');
+        let data = {
+          'username': this.username,
+          'password': this.password
+        };
+        this.$http.post('/login', data, {
+          headers: {'x-csrf-token': csrftoken}
+        }).then(res=> {
+          if ( res.data.success == 0 ) {
+            alert(2);
+          }
+          else {
+            sessionStorage.setItem('key', res.data.session);
+            location.href = '/app';
+          }
+        });
+        /*var _cookie = this.getCookie('csrfToken');
+        console.log(_cookie);
         this.$http.create({
           headers: {'X-Custom-Header-123123123123123': 'foobar'}
         })
@@ -81,7 +92,7 @@
           
         }).then(err=> {
 
-        });
+        });*/
       },
       loadPage(){
       }

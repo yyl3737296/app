@@ -2,10 +2,15 @@ module.exports = app => {
 
   return class LoginController extends app.Controller {
 
-    * index() {
-      const { ctx } = this;
-      console.log('asdfasdfasdfasdfasdf');
-      //await ctx.renderClient('index/index.js', Model.getPage(1, 10));
+    async index() {
+      const ctx = this.ctx;
+      const { username, password } = ctx.request.body;
+      if ( username == 'admin' && password == 'admin' ) {
+        ctx.body = {success: 1,session:'10'};
+      }
+      else {
+        ctx.body = {success: 0};
+      }
     }
 
   };
