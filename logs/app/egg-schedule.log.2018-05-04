@@ -1,0 +1,44 @@
+2018-05-02 10:22:18,435 INFO 15828 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 10:22:18,435 INFO 15828 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 10:47:39,221 INFO 56844 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 10:47:39,222 INFO 56844 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 10:48:07,820 INFO 17224 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 10:48:07,820 INFO 17224 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:01:56,684 INFO 51780 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:01:56,685 INFO 51780 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:04:21,145 INFO 33896 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:04:21,146 INFO 33896 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:09:03,433 INFO 57028 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:09:03,433 INFO 57028 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:15:25,961 INFO 29944 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:15:25,962 INFO 29944 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:26:21,946 INFO 50496 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:26:21,947 INFO 50496 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:29:52,524 INFO 25900 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:29:52,524 INFO 25900 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 11:30:41,187 INFO 57336 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 11:30:41,188 INFO 57336 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 13:16:26,251 INFO 54084 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 13:16:26,251 INFO 54084 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 15:12:34,359 INFO 13112 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 15:12:34,359 INFO 13112 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 15:53:41,681 INFO 53272 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 15:53:41,682 INFO 53272 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-02 17:53:03,245 INFO 57468 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-03 00:00:00.000
+2018-05-02 17:53:03,245 INFO 57468 [Timer] D:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-03 00:00:01.000
+2018-05-04 09:47:02,993 INFO 15188 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-05 00:00:00.000
+2018-05-04 09:47:02,994 INFO 15188 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-05 00:00:01.000
+2018-05-04 11:08:16,579 INFO 20952 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-05 00:00:00.000
+2018-05-04 11:08:16,580 INFO 20952 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-05 00:00:01.000
+2018-05-04 13:29:36,360 INFO 24616 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-05 00:00:00.000
+2018-05-04 13:29:36,361 INFO 24616 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-05 00:00:01.000
+2018-05-05 00:00:00,399 INFO 24616 [1525449600396131020414197495] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js triggered, send random by agent
+2018-05-05 00:00:00,428 INFO 24616 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-05-06 00:00:00.000
+2018-05-05 00:00:00,444 INFO 14948 [1525449600396131020414197495] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js task received by app
+2018-05-05 00:00:00,453 INFO 14948 [1525449600396131020414197495] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2018-05-05 00:00:00,479 INFO 14948 [1525449600396131020414197495] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 23ms
+2018-05-05 00:00:01,387 INFO 14948 [1525449601387131021405347938] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js task received by app
+2018-05-05 00:00:01,387 INFO 14948 [1525449601387131021405347938] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2018-05-05 00:00:01,417 INFO 14948 [1525449601387131021405347938] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 29ms
+2018-05-05 00:00:01,387 INFO 24616 [1525449601387131021405347938] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js triggered, send random by agent
+2018-05-05 00:00:01,389 INFO 24616 [Timer] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-05-06 00:00:01.000

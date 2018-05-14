@@ -5,6 +5,11 @@ module.exports = app => {
     async index() {
       const ctx = this.ctx;
       const { username, password } = ctx.request.body;
+      /*const user = yield ctx.service.user.find({ username, password });
+      if (!user) ctx.throw(403);
+      ctx.session = { user };*/
+  
+      ctx.rotateCsrfSecret();
       if ( username == 'admin' && password == 'admin' ) {
         ctx.body = {success: 1,session:'10'};
       }

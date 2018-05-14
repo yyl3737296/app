@@ -8,3 +8,8 @@ exports.serviceworker = {
   enable: true,
   package: 'egg-serviceworker'
 };
+
+exports.passport = {
+  enable: true,
+  package: 'egg-passport'
+};
