@@ -1,7 +1,4 @@
 {
-  "siteFile": {
-    "/favicon.ico": "E:\\app\\config\\config.default.js"
-  },
   "view": {
     "cache": "E:\\app\\node_modules\\egg-view\\config\\config.local.js",
     "root": "E:\\app\\node_modules\\egg-view\\config\\config.default.js",
@@ -10,6 +7,13 @@
     "mapping": {
       ".js": "E:\\app\\node_modules\\egg-view-vue-ssr\\config\\config.default.js"
     }
+  },
+  "mongoose": {
+    "url": "E:\\app\\config\\config.default.js",
+    "options": "E:\\app\\config\\config.default.js",
+    "loadModel": "E:\\app\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "app": "E:\\app\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "agent": "E:\\app\\node_modules\\egg-mongoose\\config\\config.default.js"
   },
   "vuessr": {
     "layout": "E:\\app\\config\\config.default.js",
@@ -231,6 +235,7 @@
       "egg": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-logger": "E:\\app\\node_modules\\egg\\config\\config.default.js",
+      "egg-mongoose": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-passport": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-serviceworker": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-validate": "E:\\app\\node_modules\\egg\\config\\config.default.js",
@@ -301,6 +306,9 @@
   },
   "notfound": {
     "pageUrl": "E:\\app\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "E:\\app\\node_modules\\egg\\config\\config.default.js"
   },
   "bodyParser": {
     "enable": "E:\\app\\node_modules\\egg\\config\\config.default.js",

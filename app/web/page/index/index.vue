@@ -74,7 +74,7 @@
           }
           else {
             sessionStorage.setItem('key', res.data.session);
-            location.href = '/app';
+            //location.href = '/app';
           }
         });
         /*var _cookie = this.getCookie('csrfToken');

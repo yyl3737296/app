@@ -113,6 +113,8 @@
         "E:\\app\\node_modules\\egg-view-vue-ssr\\config\\locales",
         "E:\\app\\node_modules\\egg-serviceworker\\config\\locales",
         "E:\\app\\node_modules\\egg-passport\\config\\locales",
+        "E:\\app\\node_modules\\passport-local\\config\\locales",
+        "E:\\app\\node_modules\\egg-mongoose\\config\\locales",
         "E:\\app\\node_modules\\egg-cors\\config\\locales",
         "E:\\app\\node_modules\\egg-webpack\\config\\locales",
         "E:\\app\\node_modules\\egg-webpack-vue\\config\\locales",
@@ -216,6 +218,17 @@
       "dir": "E:\\app\\public",
       "mapping": "E:\\app\\public\\sw-mapping.json"
     },
+    "mongoose": {
+      "url": "mongodb://127.0.0.1/app",
+      "options": {},
+      "loadModel": true,
+      "app": true,
+      "agent": false,
+      "client": {
+        "url": "mongodb://127.0.0.1/app",
+        "options": {}
+      }
+    },
     "cors": {
       "origin": "<Function corsOrigin>"
     },
@@ -269,6 +282,7 @@
         "egg": "^2.1.0",
         "egg-cors": "^2.0.0",
         "egg-logger": "^1.5.0",
+        "egg-mongoose": "^2.2.1",
         "egg-passport": "^2.0.1",
         "egg-serviceworker": "^1.0.0",
         "egg-validate": "^1.0.0",
@@ -341,7 +355,7 @@
       "pageUrl": ""
     },
     "siteFile": {
-      "/favicon.ico": "<Buffer len: 4286>"
+      "/favicon.ico": "<Buffer len: 6463>"
     },
     "bodyParser": {
       "enable": true,
@@ -625,6 +639,28 @@
       "from": "E:\\app\\config\\plugin.js",
       "path": "E:\\app\\node_modules\\egg-passport",
       "version": "2.0.1"
+    },
+    "passportLocal": {
+      "enable": true,
+      "package": "passport-local",
+      "name": "passportLocal",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\app\\config\\plugin.js",
+      "path": "E:\\app\\node_modules\\passport-local",
+      "version": "1.0.0"
+    },
+    "mongoose": {
+      "enable": true,
+      "package": "egg-mongoose",
+      "name": "mongoose",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\app\\config\\plugin.js",
+      "path": "E:\\app\\node_modules\\egg-mongoose",
+      "version": "2.2.1"
     },
     "cors": {
       "enable": true,

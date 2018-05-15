@@ -1,6 +1,0 @@
-2018-05-05 00:00:01,664 INFO 14948 [egg-logrotator] app logger reload: got log-reload message
-2018-05-06 00:00:00,863 INFO 14948 [egg-logrotator] clean all log before 31 days
-2018-05-06 00:00:00,863 INFO 14948 [-/127.0.0.1/-/7ms SCHEDULE /__schedule?path=E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js&type=worker&cron=0%200%20*%20*%20*] [egg-schedule] E:\app\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 7ms
-2018-05-06 00:00:01,865 INFO 14948 [egg-logrotator] broadcast log-reload
-2018-05-06 00:00:01,865 INFO 14948 [egg-logrotator] rotate files success by DayRotator, files ["E:\\app\\logs\\common-error.log -> E:\\app\\logs\\common-error.log.2018-05-05","E:\\app\\logs\\app-web.log -> E:\\app\\logs\\app-web.log.2018-05-05","E:\\app\\logs\\egg-web.log -> E:\\app\\logs\\egg-web.log.2018-05-05","E:\\app\\logs\\app\\egg-schedule.log -> E:\\app\\logs\\app\\egg-schedule.log.2018-05-05","E:\\app\\logs\\egg-agent.log -> E:\\app\\logs\\egg-agent.log.2018-05-05"]
-2018-05-06 00:00:01,865 INFO 14948 [-/127.0.0.1/-/30ms SCHEDULE /__schedule?path=E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [egg-schedule] E:\app\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 30ms

@@ -6,12 +6,11 @@
   "less/less.js": "/public/js/less/less.js",
   "js/chunk/0.js": "/public/js/chunk/0.js",
   "img/egg-vue-webpack-dev.png": "/public/img/egg-vue-webpack-dev.png",
-  "font/fontawesome-webfont.eot?v=4.7.0": "/public/font/fontawesome-webfont.eot",
   "img/fontawesome-webfont.svg?v=4.7.0": "/public/img/fontawesome-webfont.svg",
   "font/fontawesome-webfont.ttf?v=4.7.0": "/public/font/fontawesome-webfont.ttf",
   "font/fontawesome-webfont.woff2?v=4.7.0": "/public/font/fontawesome-webfont.woff2",
   "font/fontawesome-webfont.woff?v=4.7.0": "/public/font/fontawesome-webfont.woff",
-  "img/loading.gif": "/public/img/loading.gif",
+  "font/fontawesome-webfont.eot?v=4.7.0": "/public/font/fontawesome-webfont.eot",
   "js/vendor.js": "/public/js/vendor.js",
   "vendor.js": "/public/js/vendor.js",
   "deps": {
