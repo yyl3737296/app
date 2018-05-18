@@ -15,7 +15,40 @@ App.init = options => {
 
 
 App.client = options => {
-  Vue.prototype.$http = require('axios');
+  let axios = require('axios');
+  // http request 拦截器
+  axios.interceptors.request.use(  
+  config => {  
+    let token = cookie.getCookie('token');  
+    console.log(token)  
+    if (token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token  
+      config.headers.authorization = `token ${token}`;  
+    }  
+    return config;  
+  },  
+  err => {  
+    return Promise.reject(err);  
+  });
+
+  // http response 拦截器  
+axios.interceptors.response.use(  
+  response => {  
+    return response;  
+  },  
+  error => {  
+    if (error.response) {  
+      switch (error.response.status) {  
+        case 401:  
+          // 返回 401 清除token信息并跳转到登录页面  
+          router.replace({  
+            path: '/login'  
+          });  
+      }  
+    }  
+    return Promise.reject(error.response.data);   // 返回接口返回的错误信息  
+  });
+
+  Vue.prototype.$http = axios;
   if (options.store) {
     options.store.replaceState(Object.assign({}, App.data(), options.store.state));
   } else if (window.__INITIAL_STATE__) {

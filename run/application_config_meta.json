@@ -242,6 +242,7 @@
       "egg-view-vue-ssr": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "element-ui": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "font-awesome": "E:\\app\\node_modules\\egg\\config\\config.default.js",
+      "jsonwebtoken": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "lodash": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "moment": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "passport-local": "E:\\app\\node_modules\\egg\\config\\config.default.js",

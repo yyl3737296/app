@@ -4,6 +4,8 @@ import VueRouter from 'vue-router';
 
 import ListView from './list';
 
+import { getCookie } from 'framework/utils/utils';
+
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -25,8 +27,15 @@ const router = new VueRouter({
   ]
 });
 router.beforeEach((to, from, next) => {
-  if (!sessionStorage.getItem('key')) {
-    location.href = '/';
+  if (!to.meta.requiresAuth) {
+    const token = getCookie('token');
+    if (token) {
+      next();
+    } else {
+      location.href = '/';
+    }
+  } else {
+    next();
   }
 });
 export default router;
