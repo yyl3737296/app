@@ -22,6 +22,7 @@
 
 module.exports = app => {
   app.post('/login', app.controller.login.login.index);
+  app.post('/logout', app.controller.login.login.logout);
   app.get('/', app.controller.home.home.index);
 
   app.get('/app/api/article/list', app.controller.app.app.list);

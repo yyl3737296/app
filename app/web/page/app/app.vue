@@ -36,7 +36,7 @@
             <span class="float-right text-muted text-sm">2 days</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a @click="logOut()" class="dropdown-item dropdown-footer">注销</a>
+          <a href="javascript:;" @click="logOut()" class="dropdown-item dropdown-footer">注销</a>
         </div>
       </li>
     </ul>
@@ -144,14 +144,18 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import '../../asset/css/adminlte.min.css';
 import "../../asset/js/adminlte.min";
 import 'font-awesome/css/font-awesome.min.css';
+
 sync(store, router);
 export default {
   router,
   store,
   computed: {
+  },
+  methods: {
     logOut() {
-      sessionStorage.removeItem('key');
-      location.href = '/';
+      this.$http.post('/logout').then(res=> {
+        location.href = '/';
+      });
     }
   },
   mounted() {

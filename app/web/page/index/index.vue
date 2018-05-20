@@ -31,6 +31,8 @@
   import '../../asset/css/adminlte.min.css';
   import "../../asset/js/adminlte.min";
   import 'font-awesome/css/font-awesome.min.css';
+
+  import { getCookie } from 'framework/utils/utils';
   export default {
     components: {
 
@@ -50,49 +52,20 @@
       enterLogin(ev) {
         ev.keyCode === 13 && this.login();
       },
-      getCookie(cname) {
-          var name = cname + "=";
-          var ca = document.cookie.split(';');
-          for (var i = 0; i < ca.length; i++) {
-              var c = ca[i];
-              while (c.charAt(0) == ' ') c = c.substring(1);
-              if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
-          }
-          return "";
-      },
       login() {
-        var csrftoken = this.getCookie('csrfToken');
         let data = {
-          'username': this.username,
-          'password': this.password
-        };
-        this.$http.post('/login', data, {
-          headers: {'x-csrf-token': csrftoken}
-        }).then(res=> {
-          if ( res.data.success == 0 ) {
-            alert(2);
-          }
-          else {
-            sessionStorage.setItem('key', res.data.session);
-            location.href = '/app';
-          }
-        });
-        /*var _cookie = this.getCookie('csrfToken');
-        console.log(_cookie);
-        this.$http.create({
-          headers: {'X-Custom-Header-123123123123123': 'foobar'}
-        })
-        let data = {
-          'x-csrf-token': _cookie,
           'username': this.username,
           'password': this.password
         };
         this.$http.post('/login', data).then(res=> {
-          console.log('res', res);
-          
-        }).then(err=> {
-
-        });*/
+          if ( res.data.success == 0 ) {
+            alert(2);
+          }
+          else {
+            sessionStorage.setItem('token', getCookie('token'));
+            location.href = '/app';
+          }
+        });
       },
       loadPage(){
       }

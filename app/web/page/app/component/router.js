@@ -31,8 +31,6 @@ router.beforeEach((to, from, next) => {
     const token = getCookie('token');
     if (token) {
       next();
-    } else {
-      location.href = '/';
     }
   } else {
     next();

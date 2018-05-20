@@ -1,17 +1,9 @@
-/*const path = require('path');
-const util = require('util');
-
-module.exports = () => {
-  const skipExt = [ '.png', '.jpeg', '.jpg', '.ico', '.gif' ];
-  return function* (next) {
-    yield* next;
-  };
-};*/
-
 module.exports = () => {
   const jwt = require('jsonwebtoken');
+  var i = 0;
   return async function (ctx, next) {
-    console.log(JSON.stringify(ctx.session)+'========================');
+    i++;
+    console.log(JSON.stringify(ctx.session)+i+'========================');
     if(ctx.path=='/'||ctx.path=='/login'){
       if (ctx.path =='/' && ctx.session.key === 'User_SESS') {
         ctx.redirect('/app');
@@ -20,9 +12,10 @@ module.exports = () => {
       await next();
       return;
     }
+    console.log(ctx.request.header['authorization']+'+++++++++++++++++++++++');
     if (ctx.request.header['authorization']) {  
       let token = ctx.request.header['authorization'].split(' ')[1];  
-      console.log(token)  
+      console.log(token+'+++++++++++++++++++++++')  
       let decoded;  
       //解码token  
       try {  

@@ -53,6 +53,11 @@ this.ctx.cookies.set('token', token, {maxAge:60*1000,httpOnly:false,overwrite:tr
         ctx.body = {success: 0};
       }*/
     }
+    async logout() {
+      const ctx = this.ctx;
+      ctx.session = null;
+      ctx.body = {success: 1};
+    }
 
   };
 };
