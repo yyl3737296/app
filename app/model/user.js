@@ -3,9 +3,10 @@ module.exports = app => {
   const Schema = mongoose.Schema;
 
   const UserSchema = new Schema({
+    _id: { type: String  },
     name: { type: String  },
     password: { type: String  },
   });
 
-  return mongoose.model('book', UserSchema, 'user');
+  return mongoose.model('user', UserSchema, 'user');
 }

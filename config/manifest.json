@@ -12,6 +12,8 @@
   "font/fontawesome-webfont.woff?v=4.7.0": "/public/font/fontawesome-webfont.woff",
   "font/fontawesome-webfont.eot?v=4.7.0": "/public/font/fontawesome-webfont.eot",
   "js/vendor.js": "/public/js/vendor.js",
+  "img/avatar5.png": "/public/img/avatar5.png",
+  "img/AdminLTELogo.png": "/public/img/AdminLTELogo.png",
   "vendor.js": "/public/js/vendor.js",
   "deps": {
     "app/app.js": {

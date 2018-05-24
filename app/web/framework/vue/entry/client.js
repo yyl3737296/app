@@ -7,7 +7,7 @@ export default function(options) {
     config => {
       const token = getCookie('token');
       if (token) {
-        config.headers.authorization = `token ${token}`;
+        config.headers.authorization = token;
       }
       config.headers['x-csrf-token'] = getCookie('csrfToken');
       return config;

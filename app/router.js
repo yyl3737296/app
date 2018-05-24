@@ -21,11 +21,12 @@
 */
 
 module.exports = app => {
-  app.post('/login', app.controller.login.login.index);
-  app.post('/logout', app.controller.login.login.logout);
-  app.get('/', app.controller.home.home.index);
+  const { router, controller } = app;
+  router.post('/login', controller.login.login.index);
+  router.post('/logout', controller.login.login.logout);
+  router.get('/', controller.home.home.index);
 
-  app.get('/app/api/article/list', app.controller.app.app.list);
-  app.get('/app/api/article/:id', app.controller.app.app.detail);
-  app.get('/app(/.+)?', app.controller.app.app.index);
+  router.get('/app/api/article/list', controller.app.app.list);
+  router.get('/app/api/article/:id', controller.app.app.detail);
+  router.get('/app(/.+)?', controller.app.app.index);
 };
