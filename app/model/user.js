@@ -8,5 +8,5 @@ module.exports = app => {
     password: { type: String  },
   });
 
-  return mongoose.model('user', UserSchema, 'user');
+  return mongoose.model('User', UserSchema, 'User');
 }

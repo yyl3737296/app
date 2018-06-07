@@ -23,12 +23,16 @@ const router = new VueRouter({
     {
       path: '/detail/:id',
       component: () => import('./detail')
+    },
+    {
+      path: '/user',
+      component: () => import('./user/user')
     }
   ]
 });
 router.beforeEach((to, from, next) => {
   if (!to.meta.requiresAuth) {
-    const token = getCookie('token');
+    const token = getCookie('token_client');
     if (token) {
       next();
     }

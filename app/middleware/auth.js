@@ -19,7 +19,7 @@ module.exports = () => {
       
     }
 
-    let _token = getCookie('token');
+    let _token = getCookie('token_client');
 
     if(ctx.path=='/'||ctx.path=='/login'){
       if (ctx.path =='/' && _token) {
@@ -50,7 +50,7 @@ module.exports = () => {
         }*/
         //await next();
         //return;
-        ctx.cookies.set('token', null) 
+        ctx.cookies.set('token_client', null) 
         ctx.redirect('/');
         return;
       }
@@ -60,8 +60,9 @@ module.exports = () => {
         user_name: decoded.user_name
       }, 'aaronyang', { expiresIn: '1200s' });
 
-      ctx.cookies.set('token', token, {
-        overwrite:false
+      ctx.cookies.set('token_client', token, {
+        httpOnly: false,
+        overwrite: false
       });
       await next();
     } else {

@@ -31,6 +31,7 @@ module.exports = {
     new webpack.ProvidePlugin({
          jQuery: "jquery",
          $: "jquery",
+         'dt': "datatables.net",
          'window.jQuery': "jquery",
          Popper: ['popper.js', 'default']
     })

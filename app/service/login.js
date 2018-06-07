@@ -8,7 +8,5 @@ class LoginService extends Service {
     return user;
   }
 
-  async getPicture(uid) {
-  }
 }
 module.exports = LoginService;

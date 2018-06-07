@@ -233,6 +233,7 @@
         "axios": "^0.17.1",
         "bootstrap": "^4.1.1",
         "cross-env": "^5.0.0",
+        "datatables.net-dt": "^1.10.16",
         "egg": "^2.1.0",
         "egg-cors": "^2.0.0",
         "egg-logger": "^1.5.0",

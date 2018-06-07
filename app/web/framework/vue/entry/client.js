@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import { getCookie } from 'framework/utils/utils';
+import Datatable from 'component/datatable';
 
 export default function(options) {
   const axios = require('axios');
   axios.interceptors.request.use(
     config => {
-      const token = getCookie('token');
+      const token = getCookie('token_client');
       if (token) {
         config.headers.authorization = token;
       }
@@ -16,7 +17,7 @@ export default function(options) {
       return Promise.reject(err);
     }
   );
-
+  Vue.component('Datatable', Datatable);
   Vue.prototype.$http = axios;
   if (options.store) {
     options.store.replaceState(Object.assign({}, window.__INITIAL_STATE__, options.store.state));

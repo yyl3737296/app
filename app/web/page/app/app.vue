@@ -67,7 +67,15 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-header">基础</li>
+          <li class="nav-item">
+            <router-link :to="'/user'" class="nav-link">
+              <i class="nav-icon fa fa-address-book"></i>
+              <p>
+                用户管理
+              </p>
+            </router-link>
+          </li>
           <li class="nav-item">
             <router-link :to="'/detail/46'" class="nav-link">
               <i class="nav-icon fa fa-calendar"></i>
@@ -143,6 +151,11 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 //AdminLTE
 import '../../asset/css/adminlte.min.css';
 import "../../asset/js/adminlte.min";
+//datatable
+import "../../asset/css/dataTables.bootstrap4.min.css";
+import "../../asset/js/jquery.dataTables.min";
+import "../../asset/js/dataTables.bootstrap4.min";
+
 import 'font-awesome/css/font-awesome.min.css';
 
 sync(store, router);

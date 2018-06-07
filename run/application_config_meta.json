@@ -232,6 +232,7 @@
       "axios": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "bootstrap": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "cross-env": "E:\\app\\node_modules\\egg\\config\\config.default.js",
+      "datatables.net-dt": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "E:\\app\\node_modules\\egg\\config\\config.default.js",
       "egg-logger": "E:\\app\\node_modules\\egg\\config\\config.default.js",

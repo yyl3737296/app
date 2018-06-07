@@ -22,9 +22,9 @@
 
 module.exports = app => {
   const { router, controller } = app;
-  router.post('/login', controller.login.login.index);
+  router.post('/login', controller.login.login.login);
   router.post('/logout', controller.login.login.logout);
-  router.get('/', controller.home.home.index);
+  router.get('/', controller.login.login.index);
 
   router.get('/app/api/article/list', controller.app.app.list);
   router.get('/app/api/article/:id', controller.app.app.detail);
