@@ -72,7 +72,7 @@
             <router-link :to="'/user'" class="nav-link">
               <i class="nav-icon fa fa-address-book"></i>
               <p>
-                用户管理
+                企业管理
               </p>
             </router-link>
           </li>
@@ -181,7 +181,9 @@ export default {
     this.username = sessionStorage.getItem('username');
     history.pushState(null, null, document.URL);
     window.addEventListener('popstate', function () {
-      history.pushState(null, null, document.URL);
+      if ( document.URL.match(/app$/) ) {
+        history.pushState(null, null, document.URL);
+      }
     });
   }
 };

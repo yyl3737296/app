@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <h3 class="card-title">用户管理</h3>
+      <h3 class="card-title">企业管理</h3>
     </div>
     <div class="card-body">
       <Datatable id="user_table" :data="tabledata">
@@ -18,11 +18,9 @@ export default {
     return {
       tabledata: {
         head:[
-          'a',
-          'b',
-          'c',
-          'd',
-          'e'
+          '企业名称',
+          '联系电话',
+          '所在区域'
         ]
       }
     }

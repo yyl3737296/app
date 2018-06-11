@@ -6,9 +6,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td v-for="item in data.head">{{item}}</td>
-      </tr>
     </tbody>
   </table>
             
@@ -33,10 +30,7 @@
             // "scrollX": "100%",//表格的宽度  
             // "scrollY": "200px",//表格的高度  
             "scrollXInner": "100%",//表格的内容宽度  
-            // "bScrollCollapse":true,//当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)   
-            "aaSorting": [  
-                [3, 'asc']  
-            ],  
+            // "bScrollCollapse":true,//当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)  
             "language": {  
                 "sInfoEmpty": "没有数据",  
                 "sZeroRecords": "没有查找到满足条件的数据",  

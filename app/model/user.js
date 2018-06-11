@@ -5,6 +5,7 @@ module.exports = app => {
   const UserSchema = new Schema({
     _id: { type: String  },
     name: { type: String  },
+    username: { type:String },
     password: { type: String  },
   });
 
