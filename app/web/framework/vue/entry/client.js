@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { getCookie } from 'framework/utils/utils';
-import Datatable from 'component/datatable';
+import DataTable from 'component/dataTable';
 
 export default function(options) {
   const axios = require('axios');
@@ -17,7 +17,7 @@ export default function(options) {
       return Promise.reject(err);
     }
   );
-  Vue.component('Datatable', Datatable);
+  Vue.component('DataTable', DataTable);
   Vue.prototype.$http = axios;
   if (options.store) {
     options.store.replaceState(Object.assign({}, window.__INITIAL_STATE__, options.store.state));

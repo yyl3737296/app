@@ -15,13 +15,13 @@
       "domainWhiteList": [
         "http://localhost:7001",
         "http://127.0.0.1:7001",
-        "http://10.10.0.32:7001",
+        "http://192.168.31.244:7001",
         "http://localhost:9000",
         "http://127.0.0.1:9000",
-        "http://10.10.0.32:9000",
+        "http://192.168.31.244:9000",
         "http://localhost:9001",
         "http://127.0.0.1:9001",
-        "http://10.10.0.32:9001"
+        "http://192.168.31.244:9001"
       ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
@@ -98,29 +98,29 @@
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "E:\\app\\node_modules\\egg-session\\config\\locales",
-        "E:\\app\\node_modules\\egg-security\\config\\locales",
-        "E:\\app\\node_modules\\egg-jsonp\\config\\locales",
-        "E:\\app\\node_modules\\egg-onerror\\config\\locales",
-        "E:\\app\\node_modules\\egg-i18n\\config\\locales",
-        "E:\\app\\node_modules\\egg-watcher\\config\\locales",
-        "E:\\app\\node_modules\\egg-multipart\\config\\locales",
-        "E:\\app\\node_modules\\egg-development\\config\\locales",
-        "E:\\app\\node_modules\\egg-schedule\\config\\locales",
-        "E:\\app\\node_modules\\egg-logrotator\\config\\locales",
-        "E:\\app\\node_modules\\egg-static\\config\\locales",
-        "E:\\app\\node_modules\\egg-view\\config\\locales",
-        "E:\\app\\node_modules\\egg-view-vue-ssr\\config\\locales",
-        "E:\\app\\node_modules\\egg-serviceworker\\config\\locales",
-        "E:\\app\\node_modules\\egg-passport\\config\\locales",
-        "E:\\app\\node_modules\\passport-local\\config\\locales",
-        "E:\\app\\node_modules\\egg-mongoose\\config\\locales",
-        "E:\\app\\node_modules\\egg-cors\\config\\locales",
-        "E:\\app\\node_modules\\egg-webpack\\config\\locales",
-        "E:\\app\\node_modules\\egg-webpack-vue\\config\\locales",
-        "E:\\app\\node_modules\\egg-logview\\config\\locales",
-        "E:\\app\\node_modules\\egg\\config\\locales",
-        "E:\\app\\config\\locales"
+        "/work/work/app/node_modules/egg-session/config/locales",
+        "/work/work/app/node_modules/egg-security/config/locales",
+        "/work/work/app/node_modules/egg-jsonp/config/locales",
+        "/work/work/app/node_modules/egg-onerror/config/locales",
+        "/work/work/app/node_modules/egg-i18n/config/locales",
+        "/work/work/app/node_modules/egg-watcher/config/locales",
+        "/work/work/app/node_modules/egg-multipart/config/locales",
+        "/work/work/app/node_modules/egg-development/config/locales",
+        "/work/work/app/node_modules/egg-schedule/config/locales",
+        "/work/work/app/node_modules/egg-logrotator/config/locales",
+        "/work/work/app/node_modules/egg-static/config/locales",
+        "/work/work/app/node_modules/egg-view/config/locales",
+        "/work/work/app/node_modules/egg-view-vue-ssr/config/locales",
+        "/work/work/app/node_modules/egg-serviceworker/config/locales",
+        "/work/work/app/node_modules/egg-passport/config/locales",
+        "/work/work/app/node_modules/passport-local/config/locales",
+        "/work/work/app/node_modules/egg-mongoose/config/locales",
+        "/work/work/app/node_modules/egg-cors/config/locales",
+        "/work/work/app/node_modules/egg-webpack/config/locales",
+        "/work/work/app/node_modules/egg-webpack-vue/config/locales",
+        "/work/work/app/node_modules/egg-logview/config/locales",
+        "/work/work/app/node_modules/egg/config/locales",
+        "/work/work/app/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -130,8 +130,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "E:\\app\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "E:\\app\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "/work/work/app/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/work/work/app/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "multipart": {
@@ -161,7 +161,7 @@
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "E:\\app\\logs\\app\\egg-schedule.log"
+        "file": "/work/work/app/logs/app/egg-schedule.log"
       }
     },
     "logrotator": {
@@ -175,7 +175,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "E:\\app\\public",
+      "dir": "/work/work/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -185,7 +185,7 @@
     },
     "view": {
       "root": [
-        "E:\\app\\app\\view"
+        "/work/work/app/app/view"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -196,8 +196,8 @@
     },
     "vuessr": {
       "doctype": "<!doctype html>",
-      "layout": "E:\\app\\app\\web\\view\\layout.html",
-      "manifest": "E:\\app\\config\\manifest.json",
+      "layout": "/work/work/app/app/web/view/layout.html",
+      "manifest": "/work/work/app/config/manifest.json",
       "injectHeadRegex": "/(<\\/head>)/i",
       "injectBodyRegex": "/(<\\/body>)/i",
       "injectCss": false,
@@ -211,12 +211,12 @@
       },
       "afterRender": "<Function afterRender>",
       "renderOptions": {
-        "basedir": "E:\\app\\app\\view"
+        "basedir": "/work/work/app/app/view"
       }
     },
     "serviceworker": {
-      "dir": "E:\\app\\public",
-      "mapping": "E:\\app\\public\\sw-mapping.json"
+      "dir": "/work/work/app/public",
+      "mapping": "/work/work/app/public/sw-mapping.json"
     },
     "mongoose": {
       "url": "mongodb://127.0.0.1/app",
@@ -244,7 +244,7 @@
     "logview": {
       "prefix": "__logs",
       "staticHost": "https://unpkg.cnpmjs.org",
-      "dir": "E:\\app\\logs"
+      "dir": "/work/work/app/logs"
     },
     "env": "local",
     "name": "app",
@@ -342,9 +342,9 @@
       "license": "MIT",
       "homepage": "https://github.com/hubcarl/egg-vue-webpack-boilerplate"
     },
-    "baseDir": "E:\\app",
-    "HOME": "C:\\Users\\yangyulong",
-    "rundir": "E:\\app\\run",
+    "baseDir": "/work/work/app",
+    "HOME": "/Users/Aaron",
+    "rundir": "/work/work/app/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -375,7 +375,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "E:\\app\\logs",
+      "dir": "/work/work/app/logs",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -473,8 +473,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-session",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -486,8 +486,8 @@
         "session"
       ],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-security",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-security",
       "version": "2.2.2"
     },
     "jsonp": {
@@ -499,8 +499,8 @@
         "security"
       ],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-jsonp",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -512,8 +512,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-onerror",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-onerror",
       "version": "2.0.0"
     },
     "i18n": {
@@ -523,8 +523,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-i18n",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-i18n",
       "version": "2.0.0"
     },
     "watcher": {
@@ -534,8 +534,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-watcher",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-watcher",
       "version": "3.0.0"
     },
     "multipart": {
@@ -545,8 +545,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-multipart",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-multipart",
       "version": "2.0.0"
     },
     "development": {
@@ -560,8 +560,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-development",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-development",
       "version": "2.2.0"
     },
     "schedule": {
@@ -571,8 +571,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-schedule",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-schedule",
       "version": "3.3.0"
     },
     "logrotator": {
@@ -584,8 +584,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-logrotator",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-logrotator",
       "version": "3.0.3"
     },
     "static": {
@@ -595,8 +595,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-static",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-static",
       "version": "2.1.0"
     },
     "view": {
@@ -606,8 +606,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-view",
+      "from": "/work/work/app/node_modules/egg/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-view",
       "version": "2.1.0"
     },
     "vuessr": {
@@ -617,8 +617,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-view-vue-ssr",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-view-vue-ssr",
       "version": "3.0.8"
     },
     "serviceworker": {
@@ -628,8 +628,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-serviceworker",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-serviceworker",
       "version": "1.0.0"
     },
     "passport": {
@@ -641,8 +641,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-passport",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-passport",
       "version": "2.0.1"
     },
     "passportLocal": {
@@ -652,8 +652,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\passport-local",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/passport-local",
       "version": "1.0.0"
     },
     "mongoose": {
@@ -663,8 +663,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.js",
-      "path": "E:\\app\\node_modules\\egg-mongoose",
+      "from": "/work/work/app/config/plugin.js",
+      "path": "/work/work/app/node_modules/egg-mongoose",
       "version": "2.2.1"
     },
     "cors": {
@@ -674,8 +674,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\app\\config\\plugin.local.js",
-      "path": "E:\\app\\node_modules\\egg-cors",
+      "from": "/work/work/app/config/plugin.local.js",
+      "path": "/work/work/app/node_modules/egg-cors",
       "version": "2.0.0"
     },
     "webpack": {
@@ -687,8 +687,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\app\\config\\plugin.local.js",
-      "path": "E:\\app\\node_modules\\egg-webpack",
+      "from": "/work/work/app/config/plugin.local.js",
+      "path": "/work/work/app/node_modules/egg-webpack",
       "version": "4.1.1"
     },
     "webpackvue": {
@@ -700,8 +700,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\app\\config\\plugin.local.js",
-      "path": "E:\\app\\node_modules\\egg-webpack-vue",
+      "from": "/work/work/app/config/plugin.local.js",
+      "path": "/work/work/app/node_modules/egg-webpack-vue",
       "version": "2.0.1"
     },
     "logview": {
@@ -713,8 +713,8 @@
       "name": "logview",
       "dependencies": [],
       "optionalDependencies": [],
-      "from": "E:\\app\\config\\plugin.local.js",
-      "path": "E:\\app\\node_modules\\egg-logview",
+      "from": "/work/work/app/config/plugin.local.js",
+      "path": "/work/work/app/node_modules/egg-logview",
       "version": "1.0.1"
     }
   }

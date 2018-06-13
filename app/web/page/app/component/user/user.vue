@@ -4,8 +4,8 @@
       <h3 class="card-title">企业管理</h3>
     </div>
     <div class="card-body">
-      <Datatable id="user_table" :data="tabledata">
-      </Datatable>
+      <DataTable ref="DataTable" id="user_table" :data="tabledata">
+      </DataTable>
     </div>
   </div>
 </template>
@@ -21,6 +21,10 @@ export default {
           '企业名称',
           '联系电话',
           '所在区域'
+        ],
+        clo: [
+          'name',
+          'username'
         ]
       }
     }
@@ -35,7 +39,8 @@ export default {
   mounted() {
     this.$http.get('/getCompany').then(res=> {
       if ( res.data.success == 1 ) {
-        console.log(res.data.data);
+        this.tabledata.body = res.data.data;
+        this.$refs.DataTable.init();
       }
       
     });
