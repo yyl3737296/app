@@ -10,7 +10,7 @@ module.exports = app => {
       const ctx = this.ctx;
       const { username, password } = JSON.parse(ctx.helper.sjson(ctx.request.body));
 
-      let user = await ctx.service.login.login(username, password);
+      let user = await ctx.service.login.login.login(username, password);
 
       if (!user) {
         ctx.body = {success: 0};

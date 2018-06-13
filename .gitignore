@@ -2,5 +2,4 @@
 /logs/
 /package-lock.json
 /run/*.json
-/app/view/node_modules/*
 /config/manifest.json

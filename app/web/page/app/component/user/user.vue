@@ -26,12 +26,19 @@ export default {
     }
   },
   computed: {
+    
   },
   methods: {
     logOut() {
     }
   },
   mounted() {
+    this.$http.get('/getCompany').then(res=> {
+      if ( res.data.success == 1 ) {
+        console.log(res.data.data);
+      }
+      
+    });
   }
 };
 </script>

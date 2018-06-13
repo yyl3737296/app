@@ -29,4 +29,5 @@ module.exports = app => {
   router.get('/app/api/article/list', controller.app.app.list);
   router.get('/app/api/article/:id', controller.app.app.detail);
   router.get('/app(/.+)?', controller.app.app.index);
+  router.get('/getCompany', controller.company.company.getAll);
 };

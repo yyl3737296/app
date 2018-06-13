@@ -5,7 +5,7 @@
         <th v-for="item in data.head">{{item}}</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody v-if="false">
     </tbody>
   </table>
             
@@ -17,8 +17,6 @@
   export default{
     props:['id','data'],
     mounted() {
-      console.log(this.data);
-      //alert(this.id);
       $('#'+this.id).DataTable({
             "paging": true,// 开启分页  
             "pageLength": 10,//每页显示数量  
@@ -32,8 +30,8 @@
             "scrollXInner": "100%",//表格的内容宽度  
             // "bScrollCollapse":true,//当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)  
             "language": {  
-                "sInfoEmpty": "没有数据",  
-                "sZeroRecords": "没有查找到满足条件的数据",  
+                "sInfoEmpty": "",  
+                "sZeroRecords": "没有数据",  
                 "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",  
                 "sLengthMenu": "每页显示 _MENU_ 条记录",  
                 "sInfoFiltered": "(从 _MAX_ 条数据中检索)",  
