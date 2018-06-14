@@ -1,11 +1,27 @@
 const Service = require('egg').Service;
 class LoginService extends Service {
 
-  async getAll() {
+  async getData(search, start, limit) {
     const ctx = this.ctx;
-    const user = await ctx.model.User.find({},{'password':0});
+    const user = await ctx.model.User.find(
+        {
+            "name": new RegExp(search)
+        },
+        {
+            'password': 0
+        }
+    ).skip(start).limit(limit);
 
     return user;
+  }
+
+  async getCount(search) {
+    const ctx = this.ctx;
+    const count = await ctx.model.User.find({
+        "name": new RegExp(search)
+    }).count();
+
+    return count;
   }
 
 }

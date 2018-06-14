@@ -1,16 +1,19 @@
 {
   "app/app.js": "/public/js/app/app.js",
+  "app/component/detail.js": "/public/js/app/component/detail.js",
+  "app/component/list.js": "/public/js/app/component/list.js",
+  "app/component/user/user.js": "/public/js/app/component/user/user.js",
   "index/index.js": "/public/js/index/index.js",
   "less/less.js": "/public/js/less/less.js",
   "js/chunk/0.js": "/public/js/chunk/0.js",
   "js/chunk/1.js": "/public/js/chunk/1.js",
-  "font/fontawesome-webfont.woff?v=4.7.0": "/public/font/fontawesome-webfont.woff",
   "img/AdminLTELogo.png": "/public/img/AdminLTELogo.png",
   "img/egg-vue-webpack-dev.png": "/public/img/egg-vue-webpack-dev.png",
   "font/fontawesome-webfont.eot?v=4.7.0": "/public/font/fontawesome-webfont.eot",
   "img/fontawesome-webfont.svg?v=4.7.0": "/public/img/fontawesome-webfont.svg",
   "font/fontawesome-webfont.ttf?v=4.7.0": "/public/font/fontawesome-webfont.ttf",
   "font/fontawesome-webfont.woff2?v=4.7.0": "/public/font/fontawesome-webfont.woff2",
+  "font/fontawesome-webfont.woff?v=4.7.0": "/public/font/fontawesome-webfont.woff",
   "img/avatar5.png": "/public/img/avatar5.png",
   "js/vendor.js": "/public/js/vendor.js",
   "vendor.js": "/public/js/vendor.js",
@@ -19,6 +22,27 @@
       "js": [
         "/public/js/vendor.js",
         "/public/js/app/app.js"
+      ],
+      "css": []
+    },
+    "app/component/detail.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/component/detail.js"
+      ],
+      "css": []
+    },
+    "app/component/list.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/component/list.js"
+      ],
+      "css": []
+    },
+    "app/component/user/user.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/component/user/user.js"
       ],
       "css": []
     },
@@ -39,7 +63,7 @@
   },
   "info": {
     "publicPath": "/public/",
-    "buildPath": "public",
+    "buildPath": "\\public",
     "mapped": true
   }
 }

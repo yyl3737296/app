@@ -17,14 +17,15 @@ export default {
   data(){
     return {
       tabledata: {
+        url:'/getCompany',
         head:[
           '企业名称',
           '联系电话',
           '所在区域'
         ],
-        clo: [
-          'name',
-          'username'
+        columns: [
+            {"data" : "name"},
+            {"data" : "username"}
         ]
       }
     }
@@ -33,17 +34,9 @@ export default {
     
   },
   methods: {
-    logOut() {
-    }
   },
   mounted() {
-    this.$http.get('/getCompany').then(res=> {
-      if ( res.data.success == 1 ) {
-        this.tabledata.body = res.data.data;
-        this.$refs.DataTable.init();
-      }
-      
-    });
+    
   }
 };
 </script>

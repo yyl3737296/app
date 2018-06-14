@@ -5,10 +5,11 @@ module.exports = app => {
 
     async getAll() {
       const ctx = this.ctx;
+      let search = ctx.query['search[value]'];
+      let user = await ctx.service.company.company.getData(search, ctx.query.start, ctx.query.length);
+      let count = await ctx.service.company.company.getCount(search);
 
-      let user = await ctx.service.company.company.getAll();
-
-      ctx.body = {success: 1, data: user};
+      ctx.body = {success: 1, "recordsFiltered": count, "recordsTotal": count, data: user};
 
     }
 

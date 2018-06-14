@@ -8,8 +8,8 @@ module.exports = app => {
     }
     async login() {
       const ctx = this.ctx;
-      const { username, password } = JSON.parse(ctx.helper.sjson(ctx.request.body));
-
+      const { username, password } = ctx.request.body;
+      //const { username, password } = JSON.parse(ctx.helper.sjson(ctx.request.body));
       let user = await ctx.service.login.login.login(username, password);
 
       if (!user) {
