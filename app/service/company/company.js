@@ -5,7 +5,8 @@ class LoginService extends Service {
     const ctx = this.ctx;
     const user = await ctx.model.User.find(
         {
-            "name": new RegExp(search)
+            "name": new RegExp(search),
+            "type": 1
         },
         {
             'password': 0
@@ -18,7 +19,8 @@ class LoginService extends Service {
   async getCount(search) {
     const ctx = this.ctx;
     const count = await ctx.model.User.find({
-        "name": new RegExp(search)
+        "name": new RegExp(search),
+        "type": 1
     }).count();
 
     return count;

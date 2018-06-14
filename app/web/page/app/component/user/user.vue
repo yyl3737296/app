@@ -25,6 +25,7 @@ export default {
         ],
         columns: [
             {"data" : "name"},
+            {"data" : "tel"},
             {"data" : "username"}
         ]
       }
