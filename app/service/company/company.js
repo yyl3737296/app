@@ -1,5 +1,5 @@
 const Service = require('egg').Service;
-class LoginService extends Service {
+class CompanyService extends Service {
 
   async getData(search, start, limit) {
     const ctx = this.ctx;
@@ -11,7 +11,7 @@ class LoginService extends Service {
         {
             'password': 0
         }
-    ).skip(start).limit(limit);
+    ).skip(parseInt(start)).limit(parseInt(limit));
 
     return user;
   }
@@ -27,4 +27,4 @@ class LoginService extends Service {
   }
 
 }
-module.exports = LoginService;
+module.exports = CompanyService;
