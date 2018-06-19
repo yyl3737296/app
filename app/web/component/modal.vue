@@ -10,8 +10,8 @@
                </div>
                <div class="modal-body">在这里添加一些文本</div>
                <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                   <button type="button" class="btn btn-primary">确定</button>
+                   <button type="button" class="btn btn-default" data-dismiss="modal">{{options.ok||'取消'}}</button>
+                   <button type="button" class="btn btn-primary">{{options.canel||'确定'}}</button>
                </div>
            </div><!-- /.modal-content -->
        </div><!-- /.modal -->
