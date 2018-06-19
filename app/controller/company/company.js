@@ -1,7 +1,7 @@
 
 module.exports = app => {
 
-  return class companyController extends app.Controller {
+  return class CompanyController extends app.Controller {
 
     async getAll() {
       const ctx = this.ctx;
