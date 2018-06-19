@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <Modal id="myModal" ref="modal" :options="modal"></Modal>
+    <Modal id="myModal" ref="modal" :options="modal">
+      <div>asdfasdfasdfasdfsaf</div>
+    </Modal>
     <div class="card-header">
       <h3 class="card-title">企业管理</h3>
     </div>
