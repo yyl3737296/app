@@ -2,17 +2,11 @@
   <table :id="id" class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th v-for="item in data.head">{{item}}</th>
+        <th v-for="item in options.head">{{item}}</th>
       </tr>
     </thead>
     <tbody>
-      
     </tbody>
-    <!-- <tbody v-if="data.body">
-      <tr v-for="item in data.body">
-        <td v-for="subItem in data.clo">{{subItem}}</td>
-      </tr>
-    </tbody> -->
   </table>
             
 </template>
@@ -20,13 +14,9 @@
 
 </style>
 <script type="text/babel">
-  const axios = require('axios');
   export default{
-    props:['id','data'],
+    props:['id','options'],
     methods: {
-      init() {
-        
-      }
     },
     mounted() {
       $('#'+this.id).DataTable({
@@ -42,8 +32,8 @@
         // "scrollX": "100%",//表格的宽度  
         // "scrollY": "200px",//表格的高度  
         "scrollXInner": "100%",//表格的内容宽度
-        "ajax" : this.data.url,
-        "columns" : this.data.columns,
+        "ajax" : this.options.url,
+        "columns" : this.options.columns,
         // "bScrollCollapse":true,//当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)  
         "language": {  
             "sProcessing": "加载中...",

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { getCookie } from 'framework/utils/utils';
 import DataTable from 'component/dataTable';
+import Modal from 'component/modal';
 
 export default function(options) {
   const axios = require('axios');
@@ -18,6 +19,7 @@ export default function(options) {
     }
   );
   Vue.component('DataTable', DataTable);
+  Vue.component('Modal', Modal);
   Vue.prototype.$http = axios;
   if (options.store) {
     options.store.replaceState(Object.assign({}, window.__INITIAL_STATE__, options.store.state));
