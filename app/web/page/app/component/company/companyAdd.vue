@@ -103,10 +103,10 @@ export default {
   methods: {
     init() {
       this.company = {
-        name: 'a',
-        username: 'a',
-        password: 'a',
-        tel:'15991766597'
+        name: '',
+        username: '',
+        password: '',
+        tel:''
       }
     },
     submit() {
