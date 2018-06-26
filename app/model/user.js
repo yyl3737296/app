@@ -3,11 +3,12 @@ module.exports = app => {
   const Schema = mongoose.Schema;
 
   const UserSchema = new Schema({
-    _id: { type: String  },
     name: { type: String  },
-    username: { type:String },
+    username: { type: String },
     password: { type: String  },
-  });
+    tel: { type: String  },
+    type: { type: Number }
+  },{versionKey: false});
 
   return mongoose.model('User', UserSchema, 'User');
 }

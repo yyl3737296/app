@@ -35,6 +35,8 @@
   import 'font-awesome/css/font-awesome.min.css';
 
   import md5 from 'js-md5';
+
+  let Base64 = require('js-base64').Base64;
   export default {
     components: {
 
@@ -59,8 +61,6 @@
         ev.keyCode === 13 && this.login();
       },
       login() {
-        let Base64 = require('js-base64').Base64;
-
         let data = {
           'username': this.trim(this.username),
           'password': this.trim(this.password)

@@ -1,5 +1,5 @@
 <template>
-  <table :id="id" class="table table-bordered table-striped">
+  <table class="table table-bordered table-striped" ref="DataTable">
     <thead>
       <tr>
         <th v-for="item in options.head">{{item}}</th>
@@ -15,11 +15,19 @@
 </style>
 <script type="text/babel">
   export default{
-    props:['id','options'],
+    props:['options'],
+    data() {
+        return {
+            table:null
+        }
+    },
     methods: {
+        reload() {
+            this.table.ajax.reload();
+        }
     },
     mounted() {
-      $('#'+this.id).DataTable({
+      this.table = $(this.$refs.DataTable).DataTable({
         "paging": true,// 开启分页  
         "pageLength": 10,//每页显示数量  
         "lengthChange": true,//是否允许用户改变表格每页显示的记录数  

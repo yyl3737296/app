@@ -69,7 +69,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-header">基础</li>
           <li class="nav-item">
-            <router-link :to="'/user'" class="nav-link">
+            <router-link :to="'/company'" class="nav-link">
               <i class="nav-icon fa fa-address-book"></i>
               <p>
                 企业管理

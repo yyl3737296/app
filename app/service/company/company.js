@@ -26,5 +26,19 @@ class CompanyService extends Service {
     return count;
   }
 
+  async add(obj) {
+    const ctx = this.ctx;
+    const {name, username, password, tel} = obj;
+    const res = await ctx.model.User.create({
+        "name": name,
+        "username": username,
+        "password": password,
+        "tel": tel,
+        "type": 1
+    });
+
+    return res;
+  }
+
 }
 module.exports = CompanyService;

@@ -13,5 +13,16 @@ module.exports = app => {
 
     }
 
+    async add() {
+      const ctx = this.ctx;
+      let result = await ctx.service.company.company.add(ctx.request.body);
+      if (result) {
+        ctx.body = {success: 1}; 
+      }
+      else {
+        ctx.body = {success: 0};
+      }
+    }
+
   };
 };

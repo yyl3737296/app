@@ -1,12 +1,14 @@
 {
   "app/app.js": "/public/js/app/app.js",
+  "app/component/company/companyAdd.js": "/public/js/app/component/company/companyAdd.js",
+  "app/component/company/companyList.js": "/public/js/app/component/company/companyList.js",
   "app/component/detail.js": "/public/js/app/component/detail.js",
   "app/component/list.js": "/public/js/app/component/list.js",
-  "app/component/user/user.js": "/public/js/app/component/user/user.js",
   "index/index.js": "/public/js/index/index.js",
   "less/less.js": "/public/js/less/less.js",
   "js/chunk/0.js": "/public/js/chunk/0.js",
   "js/chunk/1.js": "/public/js/chunk/1.js",
+  "js/chunk/2.js": "/public/js/chunk/2.js",
   "img/AdminLTELogo.png": "/public/img/AdminLTELogo.png",
   "img/egg-vue-webpack-dev.png": "/public/img/egg-vue-webpack-dev.png",
   "font/fontawesome-webfont.eot?v=4.7.0": "/public/font/fontawesome-webfont.eot",
@@ -25,6 +27,20 @@
       ],
       "css": []
     },
+    "app/component/company/companyAdd.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/component/company/companyAdd.js"
+      ],
+      "css": []
+    },
+    "app/component/company/companyList.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/component/company/companyList.js"
+      ],
+      "css": []
+    },
     "app/component/detail.js": {
       "js": [
         "/public/js/vendor.js",
@@ -36,13 +52,6 @@
       "js": [
         "/public/js/vendor.js",
         "/public/js/app/component/list.js"
-      ],
-      "css": []
-    },
-    "app/component/user/user.js": {
-      "js": [
-        "/public/js/vendor.js",
-        "/public/js/app/component/user/user.js"
       ],
       "css": []
     },

@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" ref="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
        <div class="modal-dialog">
            <div class="modal-content">
                <div class="modal-header">
@@ -9,11 +9,11 @@
                     </button>
                </div>
                <div class="modal-body">
-                 <slot></slot>
+                 <slot ref="aaa"></slot>
                </div>
                <div class="modal-footer">
                    <button type="button" class="btn btn-default" data-dismiss="modal">{{options.ok||'取消'}}</button>
-                   <button type="button" class="btn btn-primary">{{options.canel||'确定'}}</button>
+                   <button type="button" class="btn btn-primary" @click="ok()">{{options.canel||'确定'}}</button>
                </div>
            </div><!-- /.modal-content -->
        </div><!-- /.modal -->
@@ -24,10 +24,16 @@
 </style>
 <script type="text/babel">
   export default{
-    props:['id','options'],
+    props:['options'],
     methods: {
         show() {
-            $('#'+this.id).modal("show");
+            $(this.$refs.modal).modal("show");
+        },
+        ok() {
+          if (this.options.$ok) {
+            this.options.$ok();
+          }
+          $(this.$refs.modal).modal("hide");
         }
     },
     mounted() {

@@ -25,8 +25,8 @@ const router = new VueRouter({
       component: () => import('./detail')
     },
     {
-      path: '/user',
-      component: () => import('./user/user')
+      path: '/company',
+      component: () => import('./company/companyList')
     }
   ]
 });
