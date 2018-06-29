@@ -24,6 +24,9 @@
     methods: {
         reload() {
             this.table.ajax.reload();
+        },
+        aaaa() {
+            alert(2);
         }
     },
     mounted() {
@@ -42,6 +45,7 @@
         "scrollXInner": "100%",//表格的内容宽度
         "ajax" : this.options.url,
         "columns" : this.options.columns,
+        "columnDefs" : this.options.columnDefs,
         // "bScrollCollapse":true,//当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)  
         "language": {  
             "sProcessing": "加载中...",

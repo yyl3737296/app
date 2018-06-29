@@ -29,13 +29,24 @@ export default {
         head:[
           '企业名称',
           '联系电话',
-          '登录名'
+          '登录名',
+          ''
         ],
         columns: [
             {"data" : "name"},
             {"data" : "tel"},
-            {"data" : "username"}
-        ]
+            {"data" : "username"},
+            {
+              "data" : null,
+              "width" : 127
+            }
+        ],
+        columnDefs:[{
+            targets: -1,
+            render: function (data, type, row, meta) {
+                return '<button @click="aaaa()" title="详情" type="button" class="btn btn-tool"><i class="fa fa-paper-plane-o" style="font-size: 22px;color:#28a745"></i></button><button title="编辑" type="button" class="btn btn-tool"><i class="fa fa-pencil" style="font-size: 22px;color:#007bff"></i></button><button title="删除" type="button" class="btn btn-tool"><i class="fa fa-trash-o" style="font-size: 22px;color:#bd2130"></i></button>';
+            }
+        }]
       }
     }
   },
@@ -46,6 +57,9 @@ export default {
     companyAdd
   },
   methods: {
+    delete() {
+      alert(2);
+    },
     reload() {
       this.$refs.DataTable.reload();
     },
