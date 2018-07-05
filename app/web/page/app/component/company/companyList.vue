@@ -20,6 +20,7 @@
 import companyAdd from './companyAdd';
 export default {
   data(){
+    var _this = this;
     return {
       modal: {
         title: '新增'
@@ -44,7 +45,16 @@ export default {
         columnDefs:[{
             targets: -1,
             render: function (data, type, row, meta) {
-                return '<button @click="aaaa()" title="详情" type="button" class="btn btn-tool"><i class="fa fa-paper-plane-o" style="font-size: 22px;color:#28a745"></i></button><button title="编辑" type="button" class="btn btn-tool"><i class="fa fa-pencil" style="font-size: 22px;color:#007bff"></i></button><button title="删除" type="button" class="btn btn-tool"><i class="fa fa-trash-o" style="font-size: 22px;color:#bd2130"></i></button>';
+
+                return `<button title="详情" type="button" class="btn btn-tool">
+                          <i class="fa fa-paper-plane-o" style="font-size: 22px;color:#28a745"></i>
+                        </button>
+                        <button title="编辑" type="button" class="btn btn-tool">
+                          <i class="fa fa-pencil" style="font-size: 22px;color:#007bff"></i>
+                        </button>
+                        <button title="删除" type="button" class="btn btn-tool">
+                          <i class="fa fa-trash-o" style="font-size: 22px;color:#bd2130"></i>
+                        </button>`;
             }
         }]
       }
